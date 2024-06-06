@@ -1,231 +1,93 @@
-:root {
-    --background-color: #ffffff;
-    --text-color: #000000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav class="bar">
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle">Dark Mode</button>
+    </header>
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    background-color: var(--background-color);
-}
+    <section id="intro">
+        <img src="pic/HOMEPAGE.png" alt="car">
+        <h1>Luxury Car</h1>
+        <p class="offer">We offer the finest cars to meet your needs for travel with the highest level of comfort and luxury. Whether you need a car for personal or business use, we are here to serve you.</p>
+        <a href="https://example.com/deployed-project" class="cta-button">Visit us</a>
+    </section>
 
-header {
-    position: fixed;
-    width: 100%;
-    background: var(--background-color);
-    color: var(--text-color);
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+    <section id="features">
+        <div class="feature-reverse-s">
+            <div class="feature-text">
+            <div class="text-icon"><img src="pic/icon.png"></div>
+            <h2>Customization Options</h2>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+        </div>
 
-nav ul li {
-    margin: 0 15px;
-}
+            <div class="feature-image">
+                <div class="sliders">
+                <div class="slides">
+                    <div class="slide"><img src="pic/Screenshot 2024-06-04 075619.png" alt="Image 1"></div>
+                    <div class="slide"><img src="pic/Screenshot 2024-06-04 075631.png" alt="Image 2"></div>
+                    <div class="slide"><img src="pic/Screenshot 2024-06-04 075648.png" alt="Image 3"></div>
+                </div>
+                </div>
+                    <p>Personalize your vehicle to match your unique style. Choose from a wide range of customizations, including interior finishes, exterior colors, and advanced features.</p>
+    
+            </div>
+        </div>
+        <div class="feature">
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 40px;
-    display: block;
-    border-radius: 5px;
-    border: none;
-    background-color: purple;
-}
+            <div class="feature-image">
+              <div class="pic"><img src="pic/pay.jpg" alt="Online Payment"></div>
+            </div>
+            <div class="feature-text">
+                <div class="text-icon">
+                    <img src="pic/images.png" alt="img4"> <!-- Icon -->
+                </div>
+                <h2>Online Payment</h2>
+                <p>Enjoy a seamless and secure online payment process. Easily complete transactions from the comfort of your home with our user-friendly payment gateway.</p>
+            </div>
+        </div>
+            <div class="feature feature-reverse">
+            <div class="feature-image">
+                        <video controls autoplay muted>
+                            <source src="pic/Untitled.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+            <div class="feature-text">
+                <div class="text-icon"><img src="pic/download2.png" alt="Online Payment"></div>
 
-#intro img {
-    width: 100%;
-}
+                <h2>Customer Service</h2>
+                <p>Experience our top-notch customer service. Our dedicated support team is here to assist you 24/7 with any inquiries or issues you may have, ensuring a smooth and enjoyable car buying experience.</p>
+            </div>
+          
+        </div>
+    </section>
+    <footer id="about">
+        <div class="about-us">
+        <h2>About Luxury Car</h2>
+        <p>Inspired by  my dad as he worked with cars for long time and the challenges of managing complex projects in a fast-paced environment, This is a Portfolio Project for Holberton School.</p>
+          <a href="" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ayaelsaid" target="_blank">GitHub</a>
+          <a href="https://twitter.com/team-member" target="_blank">Twitter</a>
+       <br>
+        <a href="https://github.com/project-repo" target="_blank">GitHub Repository
+        </div>
+      </footer>
 
-section {
-    padding: 50px 20px;
-    box-sizing: border-box;
-    text-align: center;
-    background: var(--background-color);
-    color: var(--text-color);
-}
+    <script src="script.js"></script>
 
-#intro {
-    position: relative;
-    padding-top: 100px;
-}
+</body>
+</html>
 
-h1 {
-    font-size: 4em;
-}
-
-.offer {
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-.cta-button {
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: purple;
-    color: white;
-    padding: 10px 40px;
-    text-decoration-line: none;
-}
-
-.sliders {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-.theme-toggle {
-    margin: 20px;
-    padding: 10px 20px;
-    background: purple;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.theme-toggle:hover {
-    background: purple;
-}
-
-#features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 20px;
-    background-color: var(--background-color);
-}
-
-.feature {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 200px;
-    max-width: 1200px;
-    align-items: center;
-}
-
-.feature-reverse {
-    flex-direction: row-reverse;
-}
-
-.feature-reverse-s {
-    flex-direction: column-reverse;
-}
-
-.feature-image, .feature-text {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pic {
-    scale: 1.5;
-}
-
-.feature-image img, .feature-image video {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.feature-text {
-    text-align: center;
-}
-
-.feature h2, .feature-reverse-s h2 {
-    font-size: 2em;
-    margin-top: 0;
-    color: var(--text-color);
-}
-
-.feature p, .feature-reverse-s p {
-    color: var(--text-color);
-    font-weight: lighter;
-    font-size: 1.5em;
-}
-
-.feature-reverse-s p {
-    padding: 0px 70px;
-}
-
-@media (max-width: 768px) {
-    .feature {
-        flex-direction: column;
-    }
-
-    .feature-reverse {
-        flex-direction: column;
-    }
-
-    .feature-image, .feature-text {
-        padding: 50px;
-    }
-
-    .feature-image img, .feature-image video {
-        max-width: 100%;
-    }
-}
-
-.text-icon {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.text-icon img {
-    margin-right: 10px;
-    scale: 1;
-}
-
-body.dark-mode {
-    --background-color: #333333;
-    --text-color: #ffffff;
-}
-
-footer {
-    width: 100%;
-    border-top: 1px solid;
-    border-color: var(--text-color);
-    background: var(--background-color);
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 200px;
-}
-
-footer a {
-    color: var(--text-color);
-    padding: 10px 20px;
-}
